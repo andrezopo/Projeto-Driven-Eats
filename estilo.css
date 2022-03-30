@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family:  'Roboto', sans-serif;
+    color: #333333;
+}
+.container{
+    background-color: #e5e5e5;
+}
+.barra-topo{
+    width: 100%;
+    height: 92px;
+    background-color: #CF2B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px 0 18px 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.barra-topo > div{
+    margin: 5px 0;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.barra-topo h1{
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+}
+.espacamento-topo{
+    margin-top: 92px;
+    height: 1px;
+    border-style: solid;
+}
+.introducao-opcoes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    font-size: 26px;
+    font-family: 'Righteous', cursive;
+    margin: 30px 0 18px 0;
+}
+.selecionar-opcao{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+
+}
+.opcao{
+    margin: 0 16px;
+    margin-bottom: 14px;
+    padding: 14px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.opcao > h4{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 6px 0;
+}
+.comentario{
+    width: 146px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #a6a6a6;
+    line-height: 18px;
+}
+.preco{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 6px;
+}
+.espacamento-inferior{
+    margin-bottom: 92px;
+    height: 1px;
+    border-style: solid;
+}
+.barra-confirmacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 92px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+.confirmacao{
+    width: 88%;
+    height: 66%;
+    background-color: #cbcbcb;
+    border: 0px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 24px;;
+}
