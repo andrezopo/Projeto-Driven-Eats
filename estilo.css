@@ -81,6 +81,9 @@ body{
     font-weight: 400;
     color: #000000;
     margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .espacamento-inferior{
     margin-bottom: 92px;
@@ -112,6 +115,9 @@ body{
     font-weight: 400;
     color: #ffffff;
     line-height: 24px;;
+}
+.invisivel{
+    display: none;
 }
 .tudo-selecionado{
     display: none;
