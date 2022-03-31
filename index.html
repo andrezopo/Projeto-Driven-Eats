@@ -35,7 +35,7 @@
                     Um pouco de batata, um pouco de salada
                 </div>
                 <div class="preco">
-                    <span id="preco-comida1" data-preco="14.90" data-preco="14.90"> R$ 14,90</span> <img id="vetor-comida1" class="invisivel" src="imagens/Vector.png">
+                    <span id="preco-comida1"> R$ 14,90</span> <img id="vetor-comida1" class="invisivel" src="imagens/Vector.png">
                 </div>
             </div>
             <div id="comida2" onclick="selecionarComida(this)" href="index.html" class="opcao comida">
@@ -47,7 +47,7 @@
                     Um pouco de batata, um pouco de salada
                 </div>
                 <div class="preco">
-                    <span id="preco-comida2" data-preco="14.90"> R$ 14,90</span> <img id="vetor-comida2" class="invisivel" src="imagens/Vector.png">
+                    <span id="preco-comida2"> R$ 13,70</span> <img id="vetor-comida2" class="invisivel" src="imagens/Vector.png">
                 </div>
             </div>
             <div id="comida3" onclick="selecionarComida(this)" href="index.html" class="opcao comida">
@@ -59,7 +59,7 @@
                     Um pouco de batata, um pouco de salada
                 </div>
                 <div class="preco">
-                    <span id="preco-comida3" data-preco="14.90"> R$ 14,90</span> <img id="vetor-comida3" class="invisivel" src="imagens/Vector.png">
+                    <span id="preco-comida3"> R$ 15,40</span> <img id="vetor-comida3" class="invisivel" src="imagens/Vector.png">
                 </div>
             </div>
             <div id="comida4" onclick="selecionarComida(this)" href="index.html" class="opcao comida">
@@ -71,7 +71,7 @@
                     Um pouco de batata, um pouco de salada
                 </div>
                 <div class="preco">
-                    <span id="preco-comida4" data-preco="14.90"> R$ 14,90</span> <img id="vetor-comida4" class="invisivel" src="imagens/Vector.png">
+                    <span id="preco-comida4"> R$ 23,90</span> <img id="vetor-comida4" class="invisivel" src="imagens/Vector.png">
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
                     Lata 350ml
                 </div>
                 <div class="preco">
-                    <span id="preco-bebida1"> R$ 4,90</span> <img id="vetor-bebida1" class="invisivel" src="imagens/Vector.png">
+                    <span id="preco-bebida1"> R$ 2,70</span> <img id="vetor-bebida1" class="invisivel" src="imagens/Vector.png">
                 </div>
             </div>
             <div id="bebida2" onclick="selecionarBebida(this)" class="opcao bebida">
@@ -114,7 +114,7 @@
                     Lata 350ml
                 </div>
                 <div class="preco">
-                    <span id="preco-bebida3"> R$ 4,90</span> <img id="vetor-bebida3" class="invisivel" src="imagens/Vector.png">
+                    <span id="preco-bebida3"> R$ 5,20</span> <img id="vetor-bebida3" class="invisivel" src="imagens/Vector.png">
                 </div>
             </div>
             <div id="bebida4" onclick="selecionarBebida(this)" class="opcao bebida">
@@ -126,7 +126,7 @@
                     Lata 350ml
                 </div>
                 <div class="preco">
-                    <span id="preco-bebida4"> R$ 4,90</span> <img id="vetor-bebida4" class="invisivel" src="imagens/Vector.png">
+                    <span id="preco-bebida4"> R$ 7,00</span> <img id="vetor-bebida4" class="invisivel" src="imagens/Vector.png">
                 </div>
             </div>
         </div>
@@ -145,7 +145,7 @@
                     Apenas pudim
                 </div>
                 <div class="preco">
-                    <span id="preco-sobremesa1"> R$ 7,90</span> <img id="vetor-sobremesa1" class="invisivel" src="imagens/Vector.png">
+                    <span id="preco-sobremesa1"> R$ 10,90</span> <img id="vetor-sobremesa1" class="invisivel" src="imagens/Vector.png">
                 </div>
             </div>
             <div id="sobremesa2" onclick="selecionarSobremesa(this)" class="opcao sobremesa">
@@ -157,7 +157,7 @@
                     Apenas pudim
                 </div>
                 <div class="preco">
-                    <span id="preco-sobremesa2"> R$ 7,90</span> <img id="vetor-sobremesa2" class="invisivel" src="imagens/Vector.png">
+                    <span id="preco-sobremesa2"> R$ 9,40</span> <img id="vetor-sobremesa2" class="invisivel" src="imagens/Vector.png">
                 </div>
             </div>
             <div id="sobremesa3" onclick="selecionarSobremesa(this)" class="opcao sobremesa">
@@ -169,7 +169,7 @@
                     Apenas pudim
                 </div>
                 <div class="preco">
-                    <span id="preco-sobremesa3"> R$ 7,90</span> <img id="vetor-sobremesa3" class="invisivel" src="imagens/Vector.png">
+                    <span id="preco-sobremesa3"> R$ 9,90</span> <img id="vetor-sobremesa3" class="invisivel" src="imagens/Vector.png">
                 </div>
             </div>
             <div id="sobremesa4" onclick="selecionarSobremesa(this)" class="opcao sobremesa">
@@ -193,7 +193,7 @@
                 <div>para fechar o pedido</div>
             </button>
 
-            <button onclick="fazerPedido()" id="fechar-pedido" class="confirmacao tudo-selecionado">
+            <button onclick="fazerPedido(preco)" id="fechar-pedido" class="confirmacao tudo-selecionado">
               
 
                 <div>Fechar pedido</div>
