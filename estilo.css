@@ -113,3 +113,14 @@ body{
     color: #ffffff;
     line-height: 24px;;
 }
+.tudo-selecionado{
+    display: none;
+}
+.selecionado{
+    box-shadow: 0 0 0 5px #32B72F;
+}
+.pedido-fechado{
+    background-color: #32B72F;
+    display: flex;
+    font-weight: 700;
+}
