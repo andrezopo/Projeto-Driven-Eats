@@ -15,6 +15,7 @@ function selecionarComida(item) {
     document.getElementById('vetor-' + item.id).classList.remove('invisivel')
     precoComida = document.getElementById('preco-' + item.id).textContent
     precoComida = Number(precoComida.substr(4,5).replace(',','.'))
+
     preco = (precoBebida + precoComida + precoSobremesa).toFixed(2)
     contagemComida = 1;
     contagemSelecionados = (contagemComida + contagemBebida + contagemSobremesa);
@@ -33,6 +34,7 @@ function selecionarBebida(item) {
     document.getElementById('vetor-' + item.id).classList.remove('invisivel')
     precoBebida = document.getElementById('preco-' + item.id).textContent
     precoBebida = Number(precoBebida.substr(4,5).replace(',','.'))
+
     preco = (precoBebida + precoComida + precoSobremesa).toFixed(2)
     contagemBebida = 1;
     contagemSelecionados = (contagemComida + contagemBebida + contagemSobremesa);
@@ -43,34 +45,48 @@ function selecionarBebida(item) {
 }
 function selecionarSobremesa(item) {
     for (i = 1; i <= 4; i++) {
+
         document.getElementById('sobremesa' + i).classList.remove('selecionado')
+
         document.getElementById('vetor-sobremesa' + i).classList.add('invisivel')
     }
     item.classList.add('selecionado')
+
     document.getElementById('vetor-' + item.id).classList.remove('invisivel')
+
     precoSobremesa = document.getElementById('preco-' + item.id).textContent
+
     precoSobremesa = Number(precoSobremesa.substr(4,5).replace(',','.'))
+
     preco = (precoBebida + precoComida + precoSobremesa).toFixed(2)
+
     contagemSobremesa = 1;
+
     contagemSelecionados = (contagemComida + contagemBebida + contagemSobremesa);
+
     if (contagemSelecionados === 3) {
+
         document.getElementById('falta-selecionar').classList.add('tudo-selecionado')
+
         document.getElementById('fechar-pedido').classList.add('pedido-fechado')
     }
 }
 preco = (precoBebida + precoComida + precoSobremesa).toFixed(2);
+
 let mensagem = "";
 
-
 function fazerPedido() {
+
     let nome = prompt('Qual o seu nome?');
+
     let endereco = prompt('Qual o endereço para entrega?')
-    preco = (precoBebida + precoComida + precoSobremesa).toFixed(2);
-    mensagem = "Olá, gostaria de fazer o pedido:\n- Prato: Frango Yin Yang\n- Bebida: Coquinha Gelada\n- Sobremesa: Pudim\nTotal: R$ " + preco +"\n\nNome: " + nome + "\nEndereço: " + endereco    ;
-let mensagemPronta = encodeURIComponent(mensagem);
-    alert(precoComida)
-    alert(preco)
-    alert(mensagem)
+
+    mensagem = "Olá, gostaria de fazer o *pedido*:\n- *Prato*: Frango Yin Yang\n- *Bebida*: Coquinha Gelada\n- *Sobremesa*: Pudim\n*Total*: R$ *" + preco +"*\n\n*Nome*: " + nome + "\n*Endereço*: " + endereco ;
+
+    let mensagemPronta = encodeURIComponent(mensagem);
+
     window.open("https://wa.me/5519998765432?text=" + mensagemPronta)
+
+    console.log("https://wa.me/5519982561155?text=" + mensagemPronta)
 }
 
