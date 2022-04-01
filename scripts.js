@@ -71,9 +71,21 @@ function selecionarSobremesa(item) {
         document.getElementById('fechar-pedido').classList.add('pedido-fechado')
     }
 }
-preco = (precoBebida + precoComida + precoSobremesa).toFixed(2);
 
 let mensagem = "";
+
+function confirmarPedido(){
+    let elemento = document.querySelector(".modal");
+    elemento.classList.remove('invisivel');
+    document.querySelector(".primeiro-preco").innerHTML = "R$ " + precoComida.toFixed(2);
+    document.querySelector(".segundo-preco").innerHTML = "R$ " + precoBebida.toFixed(2);
+    document.querySelector(".terceiro-preco").innerHTML = "R$ " + precoSobremesa.toFixed(2);
+    document.querySelector(".preco-total").innerHTML = "R$ " + preco;
+}
+function cancelarConfirmacao(){
+    let elemento = document.querySelector(".modal");
+    elemento.classList.add('invisivel');
+}
 
 function fazerPedido() {
 

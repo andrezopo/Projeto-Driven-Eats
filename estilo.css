@@ -119,9 +119,6 @@ a {
     color: #ffffff;
     line-height: 24px;;
 }
-.invisivel{
-    display: none;
-}
 .tudo-selecionado{
     display: none;
 }
@@ -132,4 +129,58 @@ a {
     background-color: #32B72F;
     display: flex;
     font-weight: 700;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.8);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.confirmacao-modal{
+    width: 90%;
+    height: 360px;
+    background-color: #50D074;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.25);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+}
+.informacoes-modal{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.informacoes-modal > div{
+    display: flex;
+    justify-content: space-between;
+
+}
+.tudo-certo{
+    width: 100%;
+    height: 52px;
+    background-color: #ffffff;
+    color: #50D074;
+    font-size: 22px;
+    border-radius: 100px;
+    border: 0px;
+    margin-bottom: 15px;
+}
+.negrito{
+    font-weight: 700;
+}
+.invisivel{
+    display: none;
 }
