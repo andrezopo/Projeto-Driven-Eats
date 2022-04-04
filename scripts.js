@@ -16,13 +16,11 @@ function selecionarComida(item) {
     precoComida = document.getElementById('preco-' + item.id).textContent
     precoComida = Number(precoComida.substr(4,5).replace(',','.'))
 
-    preco = (precoBebida + precoComida + precoSobremesa).toFixed(2)
+    atualizarPreco()
+
     contagemComida = 1;
-    contagemSelecionados = (contagemComida + contagemBebida + contagemSobremesa);
-    if (contagemSelecionados === 3) {
-        document.getElementById('falta-selecionar').classList.add('tudo-selecionado')
-        document.getElementById('fechar-pedido').classList.add('pedido-fechado')
-    }
+
+    contarSelecionados();
 
 }
 function selecionarBebida(item) {
@@ -35,13 +33,11 @@ function selecionarBebida(item) {
     precoBebida = document.getElementById('preco-' + item.id).textContent
     precoBebida = Number(precoBebida.substr(4,5).replace(',','.'))
 
-    preco = (precoBebida + precoComida + precoSobremesa).toFixed(2)
+    atualizarPreco()
+
     contagemBebida = 1;
-    contagemSelecionados = (contagemComida + contagemBebida + contagemSobremesa);
-    if (contagemSelecionados === 3) {
-        document.getElementById('falta-selecionar').classList.add('tudo-selecionado')
-        document.getElementById('fechar-pedido').classList.add('pedido-fechado')
-    }
+
+    contarSelecionados();
 }
 function selecionarSobremesa(item) {
     for (i = 1; i <= 4; i++) {
@@ -58,10 +54,14 @@ function selecionarSobremesa(item) {
 
     precoSobremesa = Number(precoSobremesa.substr(4,5).replace(',','.'))
 
-    preco = (precoBebida + precoComida + precoSobremesa).toFixed(2)
+    atualizarPreco()
 
     contagemSobremesa = 1;
 
+    contarSelecionados();
+
+}
+function contarSelecionados(){
     contagemSelecionados = (contagemComida + contagemBebida + contagemSobremesa);
 
     if (contagemSelecionados === 3) {
@@ -70,6 +70,9 @@ function selecionarSobremesa(item) {
 
         document.getElementById('fechar-pedido').classList.add('pedido-fechado')
     }
+}
+function atualizarPreco(){
+    preco = (precoBebida + precoComida + precoSobremesa).toFixed(2)
 }
 
 let mensagem = "";
@@ -97,8 +100,7 @@ function fazerPedido() {
 
     let mensagemPronta = encodeURIComponent(mensagem);
 
-    window.open("https://wa.me/5519998765432?text=" + mensagemPronta)
+    window.open("https://wa.me/5519982561155?text=" + mensagemPronta)
 
-    console.log("https://wa.me/5519982561155?text=" + mensagemPronta)
 }
 
